@@ -1,0 +1,17 @@
+<?php
+/**
+ * @var $block  MaxMage\InternationalTelephoneInput\Block\PhoneNumber
+ */
+?>
+
+<script type="application/javascript">
+    require([
+        'jquery',
+        'intlTelInput'
+    ], function ($) {
+        maxMageTelephoneRenderComplete = function() {
+
+            $("input[name='telephone']").intlTelInput(<?php echo $block->phoneConfig(); ?>)
+        }
+    });
+</script>

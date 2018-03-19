@@ -1,0 +1,12 @@
+<?php
+/**
+ * @var $block  MaxMage\InternationalTelephoneInput\Block\PhoneNumber
+ */
+?>
+<script type="text/x-magento-init">
+    {
+        "input[name='telephone']": {
+            "MaxMage_InternationalTelephoneInput/js/internationalTelephoneInput": <?php echo $block->phoneConfig(); ?>
+        }
+    }
+</script>
