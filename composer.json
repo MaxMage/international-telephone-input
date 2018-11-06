@@ -5,7 +5,7 @@
     "php": "7.0.2|7.0.4|~7.0.6|~7.1.0"
   },
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "OSL-3.0",
   "autoload": {
     "files": [ "registration.php" ],
@@ -17,6 +17,10 @@
     {
       "name": "MaxMage Core Team",
       "email": "maxmagedev@gmail.com"
+    },
+    {
+      "name": "Sebfie",
+      "email": "sebastien.fieloux@gmail.com"
     }
   ],
   "support": {

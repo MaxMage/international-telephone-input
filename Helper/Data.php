@@ -19,12 +19,32 @@ class Data extends AbstractHelper
 
     const XML_PATH_INTERNATIONAL_TELEPHONE_INPUT_MODULE_ENABLED = 'internationaltelephoneinput/general/enabled';
 
+    const XML_PATH_INTERNATIONAL_TELEPHONE_MULTISELECT_COUNTRIES_ALLOWED = 'internationaltelephoneinput/general/allow';
+
+    const XML_PATH_PREFERED_COUNTRY = 'general/store_information/country_id';
+
     /**
      * @return mixed
      */
     public function isModuleEnabled()
     {
         return $this->getConfig(self::XML_PATH_INTERNATIONAL_TELEPHONE_INPUT_MODULE_ENABLED);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function allowedCountries()
+    {
+        return $this->getConfig(self::XML_PATH_INTERNATIONAL_TELEPHONE_MULTISELECT_COUNTRIES_ALLOWED);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function preferedCountry()
+    {
+        return $this->getConfig(self::XML_PATH_PREFERED_COUNTRY);
     }
 
     /**
