@@ -15,7 +15,7 @@ Integration to Magento 2 a jQuery plugin for entering and validating internation
 2. Enter following commands to install module:
 
    ```
-   composer require mirkorap/international-telephone-input
+   composer require maxmage/international-telephone-input
    ```
 
 3. Enter following commands to enable module:
