@@ -53,7 +53,7 @@ class Data extends AbstractHelper
      */
     protected function getConfig($configPath)
     {
-        return $this->scopeConfig->getValue($configPath, ScopeInterface::SCOPE_STORE);
+        return $this->scopeConfig->getValue($configPath, ScopeInterface::SCOPE_STORE, $this->storeManager->getStore()->getId());
     }
 
     /**
