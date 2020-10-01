@@ -21,7 +21,7 @@ class Data extends AbstractHelper
 
     const XML_PATH_INTERNATIONAL_TELEPHONE_MULTISELECT_COUNTRIES_ALLOWED = 'internationaltelephoneinput/general/allow';
 
-    const XML_PATH_PREFERED_COUNTRY = 'general/store_information/country_id';
+    const XML_PATH_PREFERED_COUNTRY = 'internationaltelephoneinput/general/preferedCountry';
 
     /**
      * @return mixed
@@ -64,7 +64,7 @@ class Data extends AbstractHelper
      */
     public function telephoneFieldConfig($addressType, $method = '')
     {
-        return  [
+        return [
             'component' => 'Magento_Ui/js/form/element/abstract',
             'config' => [
                 'customScope' => $addressType . $method,
@@ -82,9 +82,10 @@ class Data extends AbstractHelper
             'provider' => 'checkoutProvider',
             'sortOrder' => 120,
             'validation' => [
-                "required-entry"    => true,
-                "max_text_length"   => 255,
-                "min_text_length"   => 1
+                "required-entry" => true,
+                "max_text_length" => 255,
+                "min_text_length" => 1,
+                'validate-phone-number' => true
             ],
             'options' => [],
             'filterBy' => null,
